@@ -1,7 +1,7 @@
 import React from "react";
 import {GridContainer, GridContent} from "./assets/styles";
 import InvestmentCard from "../../../../components/InvestmentCard";
-import {mockInvestment, mockInvestmentItems} from "./utils";
+import { mockInvestmentItems} from "./utils";
 import { InvestmentDTO } from "./types";
 
 

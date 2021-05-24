@@ -21,7 +21,7 @@ export type InvestmentImage = {
 
 
 export type InvestmentDetails = {
-    current: Array<string>,
-    target: Array<string>
-    percentage: number | string
+    current: Array<string>;
+    target: Array<string>;
+    percentage: number;
 }

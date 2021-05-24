@@ -10,4 +10,8 @@ export const CardContainer = Styled.div`
     flex-direction: column;
     justify-content: flex-start;
     margin-bottom: 32px;
+
+    &:hover {
+        box-shadow: rgb(0 0 0 / 20%) 0px 5px 5px;
+    }
 `

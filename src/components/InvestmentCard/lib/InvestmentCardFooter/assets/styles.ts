@@ -65,3 +65,37 @@ export const Divider = Styled.span`
 export const MetaValue = Styled.span`
     font-weight: 700;
 `
+
+
+export const ProgressContainer = Styled.div.attrs({
+    className: "progress-contauiner"
+})`
+    background-color: rgb(228, 228, 228);
+    border-radius: 2px;
+    height: 20px;
+    overflow: hidden;
+    width: 100%;
+`;
+
+
+type ProgressBarProps = {
+    progress: number
+};
+
+
+export const ProgressBar = Styled.div.attrs({
+    className: "progress-bar"
+})<ProgressBarProps>`
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: inherit;
+    color: rgb(255, 255, 255);
+    display: flex;
+    font-weight: 800;
+    height: 100%;
+    padding-left: 4px;
+    width: ${(props) => `${props.progress}%`};
+    background: ${(props) => props.progress < 100 ? `rgb(3, 3, 82)` : `rgb(255, 81, 0)`};
+`;
+
+

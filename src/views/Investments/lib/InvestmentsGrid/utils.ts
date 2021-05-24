@@ -1,41 +1,5 @@
 import { InvestmentDTO } from "./types";
 
-
-export const mockInvestment = {
-    id: "bjjPXb",
-    name: "BurningNight Group",
-    description: "Launched in 2010 and now in six of the UK’s biggest cities, BurningNight Group’s concept bars, Bierkeller Entertainment Complexes, offer distinct, multi-venue experiences. With sales now topping £19.5m & profits of £595k for 2017, they are now focused on the roll-out of their new brand, Sportskeller",
-    investment: {
-        current: [
-            "16578000",
-            "GBP"
-        ],
-        target: [
-            "75000000",
-            "GBP"
-        ],
-        percentage: "22"
-    },
-    equity: "3.61",
-    expires_at: "2017-12-02 23:59:59",
-    images: [
-        {
-            id: "d",
-            type: "logo",
-            src: "https://files-crowdcube-com.s3.amazonaws.com/files/pitch_pics/original/201711/4eed9167ed03e1bbcb9fda0bd3be8c06.jpg"
-        },
-        {
-            id: "d",
-            type: "coverImage",
-            src: "https://files-crowdcube-com.s3.amazonaws.com/opportunity_images/21357/201711/db0b9a86a92bfb3989bf633cda08e299.jpg"
-        }
-    ]
-}  as InvestmentDTO;
-
-
-
-
-
 export const mockInvestmentItems = [
     {
         "id": "bjjPXb",
