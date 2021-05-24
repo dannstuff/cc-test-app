@@ -3,6 +3,7 @@ import { LayoutProps } from "./types";
 import {Main} from "./assets/styles";
 import Header from "../../../../components/Header";
 import FilterBar from "../../../../components/FilterBar";
+import PageHeader from "../../../../components/PageHeader";
 
 
 
@@ -14,6 +15,7 @@ function Layout(props: LayoutProps){
         <Main>
             <Header />
             <FilterBar />
+            <PageHeader />
             {children}
         </Main>
     )

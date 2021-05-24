@@ -1,11 +1,19 @@
 import React from "react";
-import Investments from "../../Investments";
-import {InvestmentsHeaderContainer} from "./assets/styles";
+import {InvestmentsHeaderContainer, DisclaimerContainer, Disclaimerlink} from "./assets/styles";
+import InvestmentSort from "./lib/InvestmentSort";
 
 function InvestmentsHeader(){
     return (
         <InvestmentsHeaderContainer>
-            investments header
+           <InvestmentSort />
+            <DisclaimerContainer>
+                <div>
+                    Capital at Risk. Please read our 
+                    <Disclaimerlink> risk warning </Disclaimerlink>
+                    and
+                    <Disclaimerlink> disclaimer </Disclaimerlink>
+                </div>
+            </DisclaimerContainer>
         </InvestmentsHeaderContainer>
     )
 }

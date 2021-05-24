@@ -1,11 +1,18 @@
 import React from "react";
-import { HeaderContainer } from "./assets/styles";
+import { HeaderContainer, HeaderNav, NavContainer} from "./assets/styles";
+import LeftNav from "./lib/LeftNav";
+import RightNav from "./lib/RightNav";
 
 
 function Header(){
     return (
         <HeaderContainer>
-            <div />
+            <HeaderNav>
+                <NavContainer>
+                    <LeftNav />
+                    <RightNav />
+                </NavContainer>
+            </HeaderNav>
         </HeaderContainer>
     )
 }
