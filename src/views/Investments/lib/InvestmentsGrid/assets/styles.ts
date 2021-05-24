@@ -7,7 +7,8 @@ export const GridContainer = Styled.div.attrs({
 })`
     display: flex;
     flex: 1;
-    margin: 0px 412px;
+    margin: 0px auto;
+    max-width: calc(1224px);
 
     @media ${screen.mobile}{
         margin: 0;
