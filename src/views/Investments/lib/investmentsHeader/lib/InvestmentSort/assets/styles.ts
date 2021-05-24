@@ -1,10 +1,18 @@
 import Styled from "styled-components";
+import {screen} from "../../../../../../../utils/devices";
+
 
 
 
 export const InvestmentSortContainer = Styled.div`
     max-width: 210px;
     width: 100%;
+
+    @media ${screen.mobile}{
+        max-width: 100%;
+        width: 100%;
+        margin-top: 8px;
+    }
 `;
 
 
@@ -27,4 +35,11 @@ export const SelectButton = Styled.select`
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMTJweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIzcHgiIHZpZXdCb3g9IjAgMCA2IDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+");
     background-position: 100% center;
     background-repeat: no-repeat;
+
+
+    @media ${screen.mobile}{
+        max-width: 100%;
+        width: 100%;
+    }
+
 `;

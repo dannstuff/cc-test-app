@@ -1,4 +1,5 @@
 import Styled from "styled-components";
+import {screen} from "../../../../../utils/devices";
 
 
 export const GridContainer = Styled.div.attrs({
@@ -7,6 +8,12 @@ export const GridContainer = Styled.div.attrs({
     display: flex;
     flex: 1;
     margin: 0px 412px;
+
+    @media ${screen.mobile}{
+        margin: 0;
+    }
+
+
 `;
 
 
