@@ -28,3 +28,10 @@ export const GridContent = Styled.div.attrs({
     flex-wrap: wrap;
     overflow-y: auto;
 `
+
+
+export const NoResults = Styled.div`
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+`;
