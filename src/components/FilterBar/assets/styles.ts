@@ -1,4 +1,5 @@
 import Styled from "styled-components";
+import {screen} from "../../../utils/devices";
 
 
 export const FilterBarContainer = Styled.div`
@@ -16,11 +17,22 @@ export const ContentContainer = Styled.div.attrs({
     max-width: 1200px;
     -webkit-box-pack: justify;
     justify-content: space-between;
+
+    @media ${screen.mobile}{
+        flex-direction: column;
+        -webkit-box-align: start;
+        align-items: start;
+    }
 `;
 
 export const PageNameContainer = Styled.div`
     -webkit-box-pack: justify;
     justify-content: space-between;
+
+    @media ${screen.mobile}{
+        border-bottom: 1px solid rgb(228, 228, 228);
+        width: 100%;
+    }
 `;
 
 
@@ -36,6 +48,17 @@ export const PageName = Styled.h2`
 
 export const FilterSearchContainer = Styled.div`
     display: flex;
+
+
+
+    @media ${screen.mobile}{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 100%;
+        padding: 8px;
+    }
+
 `;
 
 

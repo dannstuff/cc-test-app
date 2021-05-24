@@ -1,4 +1,6 @@
 import Styled from "styled-components";
+import {screen} from "../../../../../utils/devices";
+
 
 export const InvestmentsHeaderContainer = Styled.div`
     display: flex;
@@ -8,7 +10,15 @@ export const InvestmentsHeaderContainer = Styled.div`
     margin: 24px auto;
     max-width: calc(1224px);
     padding: 0px 24px;
-    width: 1176px;
+
+    @media ${screen.web}{
+        width: 1176px;
+    }
+    
+    @media ${screen.mobile}{
+        flex-direction: column-reverse;
+        padding-right: 24px;
+    }
 `;
 
 
