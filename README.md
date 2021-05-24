@@ -2,7 +2,7 @@
 
 To set up this project, first clone the repo and then in the project directory run - 
 
-### `yarn start`
+### `yarn install`
 
 to install dependencies and then - 
 
